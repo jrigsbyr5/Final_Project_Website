@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "Development Opportunity Optimizatizer"
+  navbar:
+    background: dark
+    foreground: "#00e676"
+    left:
+      - text: "Home"
+        href: index.qmd
+  page-footer:
+    center: "© 2025 Joshua Rigsby — MUSA Final Project"
+
+format:
+  html:
+    theme: styles/money-dark.scss
+    toc: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap

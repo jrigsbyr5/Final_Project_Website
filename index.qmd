@@ -1,0 +1,16 @@
+---
+title: "Development Opportunity Optimization"
+---
+
+# Development Opportunity Optimization
+### Final Project — MUSA 5500 | Joshua Rigsby
+
+Welcome to my final project website.
+
+This project includes:
+
+- Geospatial preprocessing  
+- Parcel-level redevelopment opportunity scoring  
+- Predictive modeling  
+- Interactive dashboards  
+- Optimization using PuLP
