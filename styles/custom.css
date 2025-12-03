@@ -1,64 +1,87 @@
-/* -------------------------------
-   GLOBAL STYLING FOR THE WEBSITE
---------------------------------*/
-
-/* PAGE BACKGROUND */
+/* =======================================================================
+   GLOBAL PAGE BACKGROUND + BODY TEXT
+======================================================================= */
 body {
-  background-color: #1b1b1b !important;
+  background-color: #2f2f2f !important;
+  color: #ffffff !important;
+  margin-left: 260px !important; /* shift content so sidebar never overlaps */
 }
 
-/* PAGE WIDTH */
-main.content {
-  max-width: 900px;
-  margin: auto;
-  padding-top: 30px;
-}
-
-/* HEADINGS */
-h1, h2, h3 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* INDEX PAGE HERO TITLE */
-.index-title {
-  font-size: 2.8rem;
-  font-weight: 700;
-  color: #00e676;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* INDEX SUBTITLE */
-.index-subtitle {
-  font-size: 1.3rem;
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 25px;
-  color: #ccc;
-}
-
-/* LIST IMPROVEMENTS */
-ul li {
-  margin-bottom: 8px;
-}
-
-/* LINKS */
-a {
-  transition: color 0.15s ease, border-bottom 0.15s ease;
-}
-
-a:hover {
-  color: #00ff99 !important;
-  border-bottom: 1px solid #00ff99;
-}
-
-/* SIDEBAR */
+/* =======================================================================
+   FIXED SIDEBAR
+======================================================================= */
 .sidebar {
-  background-color: #111 !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 260px !important;
+  overflow-y: auto;
+  background-color: #1f1f1f !important;
+  padding-top: 70px;
+  border-right: 1px solid #333;
 }
 
-/* NAVBAR */
-.navbar {
-  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+.sidebar a {
+  color: #00e676 !important;
+  font-weight: 500;
+}
+
+.sidebar a:hover {
+  color: #7fe4b1 !important;
+}
+
+/* =======================================================================
+   HEADERS (ALL GREEN)
+======================================================================= */
+h1, h2, h3, h4 {
+  color: #00e676 !important;
+  margin-top: 1.3rem;
+}
+
+h1 {
+  border-bottom: 2px solid #00e676;
+  padding-bottom: 8px;
+}
+
+/* =======================================================================
+   CODE BLOCKS — JUPYTER STYLE, READABLE, KEEP ACCENTS
+======================================================================= */
+pre, code, .code, .sourceCode {
+  background-color: #f6f6f6 !important;
+  color: #222222 !important; /* readable dark gray text */
+  border-radius: 6px;
+  border: 1px solid #dcdcdc !important;
+  font-size: 0.92rem;
+}
+
+/* SYNTAX COLORS ACCENTS (KEEP ORANGE + GREEN) */
+span.kw { color: #ff8c00 !important; }  /* imports, def, return */
+span.fu { color: #00a86b !important; }  /* functions, classes */
+span.dv { color: #aa5d00 !important; }  /* numbers */
+span.st { color: #007700 !important; }  /* strings */
+span.co { color: #888888 !important; font-style: italic; }
+
+/* =======================================================================
+   CODE OUTPUT (WHITE TEXT)
+======================================================================= */
+div.output pre {
+  background-color: #2f2f2f !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+/* =======================================================================
+   LINKS
+======================================================================= */
+a { color: #7fe4b1 !important; }
+a:hover { color: #00e676 !important; }
+
+/* =======================================================================
+   PAGE TITLE STYLING
+======================================================================= */
+#title-block-header {
+  margin-left: 260px !important; /* align with shifted body */
 }
