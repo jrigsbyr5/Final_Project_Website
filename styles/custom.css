@@ -5,6 +5,11 @@ body {
   background-color: #2f2f2f !important;
   color: #ffffff !important;
   margin-left: 260px !important; /* shift content so sidebar never overlaps */
+
+  /* FIX TEXT WRAP */
+  white-space: normal !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
 }
 
 /* =======================================================================
@@ -45,21 +50,26 @@ h1 {
 }
 
 /* =======================================================================
-   CODE BLOCKS — JUPYTER STYLE, READABLE, KEEP ACCENTS
+   CODE BLOCKS — RESTORE PROPER FORMATTING
 ======================================================================= */
-pre, code, .code, .sourceCode {
+pre, pre code, code, .code, .sourceCode {
+  white-space: pre !important;          /* <<< CRITICAL FIX */
+  overflow-x: auto !important;
+  line-height: 1.35 !important;
+  word-break: normal !important;
+
   background-color: #f6f6f6 !important;
-  color: #222222 !important; /* readable dark gray text */
+  color: #222222 !important;
   border-radius: 6px;
   border: 1px solid #dcdcdc !important;
   font-size: 0.92rem;
 }
 
-/* SYNTAX COLORS ACCENTS (KEEP ORANGE + GREEN) */
-span.kw { color: #ff8c00 !important; }  /* imports, def, return */
-span.fu { color: #00a86b !important; }  /* functions, classes */
-span.dv { color: #aa5d00 !important; }  /* numbers */
-span.st { color: #007700 !important; }  /* strings */
+/* SYNTAX COLORS */
+span.kw { color: #ff8c00 !important; }
+span.fu { color: #00a86b !important; }
+span.dv { color: #aa5d00 !important; }
+span.st { color: #007700 !important; }
 span.co { color: #888888 !important; font-style: italic; }
 
 /* =======================================================================
@@ -80,8 +90,8 @@ a { color: #7fe4b1 !important; }
 a:hover { color: #00e676 !important; }
 
 /* =======================================================================
-   PAGE TITLE STYLING
+   PAGE TITLE
 ======================================================================= */
 #title-block-header {
-  margin-left: 260px !important; /* align with shifted body */
+  margin-left: 260px !important;
 }
