@@ -1,0 +1,64 @@
+/* -------------------------------
+   GLOBAL STYLING FOR THE WEBSITE
+--------------------------------*/
+
+/* PAGE BACKGROUND */
+body {
+  background-color: #1b1b1b !important;
+}
+
+/* PAGE WIDTH */
+main.content {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* INDEX PAGE HERO TITLE */
+.index-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00e676;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* INDEX SUBTITLE */
+.index-subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+/* LIST IMPROVEMENTS */
+ul li {
+  margin-bottom: 8px;
+}
+
+/* LINKS */
+a {
+  transition: color 0.15s ease, border-bottom 0.15s ease;
+}
+
+a:hover {
+  color: #00ff99 !important;
+  border-bottom: 1px solid #00ff99;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: #111 !important;
+}
+
+/* NAVBAR */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
